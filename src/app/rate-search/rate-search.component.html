@@ -1,0 +1,12 @@
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col p-4 d-flex flex-column position-static">
+    <strong class="d-inline-block mb-2">Search operator</strong>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="" [(ngModel)]="telephone" #phoneNumberRef="ngModel" 
+      name="telephone" (keyup.enter)="cheapestCallCost()">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="cheapestCallCost()">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
